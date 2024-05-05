@@ -1,11 +1,11 @@
 from pydantic import BaseModel
 from typing import Optional
-from datetime import datetime
+from typing import Text
+
 
 class Articulo(BaseModel):
-    id: Optional[int] = None
+    id: Optional[str] = None
     titulo: str
     autor: str
-    contenido: str
-    creado: datetime
+    contenido: Text
     categoria: str
